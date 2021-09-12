@@ -1,3 +1,4 @@
+#-----------------funcões-----------------
 def welcome(name):
     msg = 'Ola ' + name.title()
     print(msg)
@@ -7,7 +8,11 @@ welcome('ivanesia gomes costa')
 welcome('lucas alberto de souza')
 
 #criando uma função de soma
-def soma(n1, n2):
+"""
+No exemplo da função abaixo, solicita dois valores, porém se o usuário informar somente um valor, a função ira apresentar
+um erro. Para solucionar bastar desclara a variavel como sendo 0.
+"""
+def soma(n1=0, n2=0):
     calculo = n1 + n2
     print(calculo)
 
